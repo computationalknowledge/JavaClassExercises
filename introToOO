@@ -1,7 +1,3 @@
-// To make the Introduce() method non-static, remove the static keyword. 
-// Then, to call it from the RunProgram() method, 
-//  you need to create an instance of the Person class. 
-
 public class Person {
     String name;
     int age;
@@ -13,6 +9,10 @@ public class Person {
 
     public static void RunProgram() {
         Person personInstance = new Person();
+        personInstance.name = "JOE";
+        personInstance.age = 30;
+        personInstance.program = "Java Programming";
+        
         personInstance.Introduce();
     }
 
